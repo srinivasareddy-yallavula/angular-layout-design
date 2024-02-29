@@ -1,0 +1,49 @@
+  <div class="tabs-blocks">
+    <div class="content">
+        <div class="tabs">
+            <button class="tablinks" id="person1-link" (click)="openTab('person1')">Person 1</button>
+            <button class="tablinks" id="person2-link" (click)="openTab('person2')">Person 2</button>
+            <button class="tablinks" id="person3-link" (click)="openTab('person3')">Person 3</button>
+          </div>
+        <div id="person1" class="tabcontent" [ngClass]="{'active': activeTab === 'person1'}">
+            <h2>Person 1 Details</h2>
+            <p>Name: John Doe</p>
+            <p>Age: 30</p>
+            <p>Occupation: Engineer</p>
+        </div>
+        <div id="person2" class="tabcontent" [ngClass]="{'active': activeTab === 'person2'}">
+            <h2>Person 2 Details</h2>
+            <p>Name: Jane Smith</p>
+            <p>Age: 25</p>
+            <p>Occupation: Doctor</p>
+        </div>
+        <div id="person3" class="tabcontent" [ngClass]="{'active': activeTab === 'person3'}">
+            <h2>Person 3 Details</h2>
+            <p>Name: Bob Johnson</p>
+            <p>Age: 40</p>
+            <p>Occupation: Teacher</p>
+        </div>
+    </div>
+</div>
+<div class="accordion-content">
+    <div>
+      <button class="accordion" (click)="toggleAccordion(1)">Section 1</button>
+      <div class="acc-panel" [ngClass]="{'active': activeAccordion === 1}">
+        <p>Using the accordion</p>
+        <p>Here I am displaying the content</p>
+      </div>
+  
+      <button class="accordion" (click)="toggleAccordion(2)">Section 2</button>
+      <div class="acc-panel" [ngClass]="{'active': activeAccordion === 2}">
+        <p>Using the accordion</p>
+        <p>Here I am displaying the content</p>
+      </div>
+  
+      <button class="accordion" (click)="toggleAccordion(3)">Section 3</button>
+      <div class="acc-panel" [ngClass]="{'active': activeAccordion === 3}">
+        <p>Using the accordion</p>
+        <p>Here I am displaying the content</p>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,77 @@
+
+
+.content {
+    padding: 20px;
+}
+
+.tabs {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+.tablinks {
+    background-color: #f2f2f2;
+    float: left;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.tablinks:hover {
+    background-color: #ddd;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: 100%;
+    background-color: white;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+.tabs-blocks {
+    width: 100%;
+    background-color: #e9dddd;
+}
+
+
+.accordion-content {
+    padding: 40px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.acc-panel {
+    padding: 0 18px;
+    background-color: white;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+}
+
+.acc-panel.active {
+    max-height: 500px; 
+}
+
